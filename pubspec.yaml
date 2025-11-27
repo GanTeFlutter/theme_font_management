@@ -1,0 +1,42 @@
+name: flutter_text_theme
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.0+1
+environment:
+
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.1.1
+  shared_preferences: ^2.5.3
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+
+
+
+
+  fonts:
+  - family: Jost
+    fonts:
+      - asset: assets/fonts/jost/Jost-VariableFont_wght.ttf
+      - asset: assets/fonts/jost/Jost-Italic-VariableFont_wght.ttf
+        style: italic
+
+  - family: Inter
+    fonts:
+      - asset: assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf
+      - asset: assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
+        style: italic
+    
