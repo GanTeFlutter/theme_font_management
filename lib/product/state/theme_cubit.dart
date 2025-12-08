@@ -9,4 +9,4 @@ final class ThemeCubit extends Cubit<ThemeMode> {
   void toggleTheme() {
     emit(isDarkMode ? ThemeMode.light : ThemeMode.dark);
   }
-}
+} 
