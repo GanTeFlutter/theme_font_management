@@ -21,9 +21,7 @@ class _MyApp extends StatelessWidget {
       title: 'theme mode',
       darkTheme: AppTheme().appDarkTheme,
       theme: AppTheme().appLightTheme,
-      themeMode: context.watch<ThemeCubit>().isDarkMode
-          ? ThemeMode.dark
-          : ThemeMode.light,
+      themeMode: context.watch<ThemeCubit>().state,
       home: HomeView(),
     );
   }
