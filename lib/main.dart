@@ -4,7 +4,7 @@ import 'package:flutter_text_theme/future/home/home_view.dart';
 import 'package:flutter_text_theme/product/init/app_initialize.dart';
 import 'package:flutter_text_theme/product/init/app_state_initialize.dart';
 import 'package:flutter_text_theme/product/state/theme_cubit.dart';
-import 'package:flutter_text_theme/product/theme/theme_mode/theme_mode.dart';
+import 'package:flutter_text_theme/product/theme/theme_mode.dart';
 
 Future<void> main() async {
   await AppInitialize().make();
@@ -18,9 +18,9 @@ class _MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'theme mode',
-      darkTheme: AppTheme().appDarkTheme,
-      theme: AppTheme().appLightTheme,
+      title: 'theme',
+      darkTheme: AppTheme.darkTheme,
+      theme: AppTheme.lightTheme,
       themeMode: context.watch<ThemeCubit>().state,
       home: HomeView(),
     );

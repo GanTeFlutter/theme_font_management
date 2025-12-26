@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(ls \"c:\\\\Users\\\\denem\\\\Desktop\\\\projeler\\\\flutter_text_theme\\\\lib\\\\product\\\\theme\\\\theme_companent\\\\theme_elevated_button\"\" 2>&1 || echo \"Directory not found \")",
+      "Bash(test:*)"
+    ]
+  }
+}
